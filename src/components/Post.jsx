@@ -1,5 +1,6 @@
-import { Comment } from "./Comment";
-import styles from "./Post.module.css";
+
+import { Comment } from './Comment';
+import styles from './Post.module.css';
 
 export function Post() {
   return (
@@ -35,17 +36,18 @@ export function Post() {
           <a href="">#rocketseat</a>
         </p>
       </div>
-
-      <form className={styles.commentForm}>
-        <strong>Deixe seu feedback</strong>
-        <textarea placeholder="Deixe seu comentario" />
-        <footer>
-          <button type="submit">Publicar</button>
-        </footer>
-      </form>
-      <div className={styles.commentList}>
-        <Comment />
-      </div>
-    </article>
-  );
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+                <textarea
+                    placeholder='Deixe seu comentario'
+                />
+                <footer>
+                    <button type='submit'>Publicar</button>
+                </footer>
+            </form>
+            <div className={styles.commentList}>
+                <Comment/>
+            </div>
+        </article>
+    )
 }
