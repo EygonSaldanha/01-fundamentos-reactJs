@@ -2,12 +2,13 @@ import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 
-export function Post() {
+export function Post(props) {
+  console.log(props);
   return (
     <article className={styles.post}>
       <header className="oi">
         <div className={styles.author}>
-          <Avatar src="https://github.com/EygonSaldanha.png" />
+          <Avatar src={props.author.avatarUrl} />
           <div className={styles.authorInfo}>
             <strong>Dego Fernandes</strong>
             <span>Wev dev</span>
